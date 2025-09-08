@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    width: 100%;
+}
+
+#logo {
+    height: 70px;
+    width: 20vw;
+    object-fit: contain;
+    padding: 10px 20px;
+    background: transparent;
+}
+
+.nav-bar ul {
+    display: flex;
+    align-items: stretch; /* Permet aux <li> de prendre toute la hauteur */
+    justify-content: flex-start;
+    width: 20vw;
+    min-width: 220px;
+    max-width: 400px;
+    list-style: none;
+    margin: 0 0 0 auto;
+    padding: 0;
+    height: 100%;
+    background: #f8f8f8; /* Un fond pour grouper visuellement */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.nav-bar li {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.2s;
+    /* Pas de margin ni border séparateur */
+}
+
+.nav-bar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+    font-size: 2.2rem;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-bar li:hover, .nav-bar a:hover {
+    background: #e0e0e0;
+    color: #0077ff;
+    cursor: pointer;
+}
+
+.nav-bar i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .nav-bar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    #logo, .nav-bar ul {
+        width: 100%;
+        max-width: none;
+    }
+    .nav-bar ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+/* bas*/
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 18px 10px 10px 10px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
+    z-index: 1000;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+footer p {
+    margin: 4px 0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+footer .socials {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+footer .socials li {
+    display: inline-block;
+}
+
+footer .socials a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    transition: color 0.2s;
+}
+
+footer .socials a:hover {
+    color: #4fc3f7;
+}
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 14px;
+        padding: 13px 4px 8px 4px;
+    }
+    footer .socials {
+        gap: 12px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}

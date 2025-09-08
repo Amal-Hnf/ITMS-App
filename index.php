@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style1.css">
+    <title>Se Connecter</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <img src="images/logo1.jpg" alt="Logo" id="logo">
+    </div>
+    <div class="form">
+        <form action="" method="post">
+            <h1>Se Connecter</h1>
+            <input type="text" name="username" id="username" placeholder="Nom d'utilisateur"><br>
+            <input type="password" name="password" id="password" placeholder="Mot de passe"><br>
+            <a href="Oublie-mot_passe.html">Oublié mot de passe?</a><br>
+            <button type="submit">Connecter</button>
+        </form>
+    </div>
+</body>
+</html>
