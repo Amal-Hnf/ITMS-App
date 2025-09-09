@@ -13,7 +13,7 @@
             <p>Nom d'utilisateur :"$username" </p>
             <p>Le role : "$role" </p>
             <p>E-mail : "$mail" </p><button>Changer E-mail</button>
-            <button>Modifier Mot de passe</button>
+            <br><button>Modifier Mot de passe</button>
         </div>
     </div>
     <?php //importer 'contact.html' ?>
