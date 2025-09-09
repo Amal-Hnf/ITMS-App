@@ -6,11 +6,11 @@
     <title>Accueil</title>
 </head>
 <body>
-    <?php ?>
+    <?php //importer 'nav-bar.html' ?>
     <div class="main">
         <h1> Ville de Mostaganem </h1>
         <img src="images/Carte1.jpg" alt="Carte geographiqye">
     </div>  
-    <?php ?>
+    <?php //importer 'contact.html' ?>
 </body>
 </html>
